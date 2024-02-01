@@ -144,6 +144,9 @@ newGameButton.addEventListener('click',()=>{
     if (flipped_cards.length!=0) {
         location.reload();
     }
+    if (cards.length!=12) {
+        location.reload();
+    }
     function shuffle(array) {
         let currentIndex = array.length,  randomIndex;
         while (currentIndex > 0) {
